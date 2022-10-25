@@ -20,7 +20,7 @@ connection.once('open', () => {
 
 const api = require('../routes/data');
 
-app.use('/data',api);
+app.use('/.netlify/functions/api/data',api);
 
 module.exports = app;
 module.exports.handler = serverless(app);
