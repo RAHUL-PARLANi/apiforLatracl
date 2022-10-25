@@ -18,7 +18,7 @@ connection.once('open', () => {
     console.log("Mongodb database connection established successfully !!");
 })
 
-const api = require('./routes/data');
+const api = require('../routes/data');
 
 app.use('/api',api);
 
