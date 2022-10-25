@@ -20,7 +20,7 @@ connection.once('open', () => {
 
 const api = require('../routes/data');
 
-app.use('/api',api);
+app.use('/data',api);
 
 module.exports = app;
 module.exports.handler = serverless(app);
